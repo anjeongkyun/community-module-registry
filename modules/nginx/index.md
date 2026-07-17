@@ -20,6 +20,17 @@ docs:
           <scope>test</scope>
       </dependency>
       ```
+  - id: go
+    url: https://golang.testcontainers.org/modules/nginx/
+    maintainer: core
+    example: |
+      ```go
+      nginxContainer, err := nginx.Run(context.Background(), "nginx:1.25.3")
+      ```
+    installation: |
+      ```bash
+      go get github.com/testcontainers/testcontainers-go/modules/nginx
+      ```
   - id: python
     url: https://testcontainers-python.readthedocs.io/en/latest/modules/nginx/README.html
     maintainer: core

@@ -20,6 +20,17 @@ docs:
           <scope>test</scope>
       </dependency>
       ```
+  - id: go
+    url: https://golang.testcontainers.org/modules/orientdb/
+    maintainer: core
+    example: |
+      ```go
+      orientdbContainer, err := orientdb.Run(context.Background(), "orientdb:3.2")
+      ```
+    installation: |
+      ```bash
+      go get github.com/testcontainers/testcontainers-go/modules/orientdb
+      ```
   - id: rust
     url: https://docs.rs/testcontainers-modules/latest/testcontainers_modules/orientdb/struct.OrientDb.html
     maintainer: community

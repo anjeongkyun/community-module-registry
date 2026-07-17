@@ -3,6 +3,25 @@ title: Mailpit
 categories:
   - other
 docs:
+  - id: java
+    url: https://github.com/martinellich/testcontainers-mailpit
+    maintainer: community
+    example: |
+      ```java
+      var mailpit = new MailpitContainer();
+      mailpit.start();
+      ```
+  - id: go
+    url: https://golang.testcontainers.org/modules/mailpit/
+    maintainer: core
+    example: |
+      ```go
+      mailpitContainer, err := mailpit.Run(context.Background(), "axllent/mailpit:v1.21")
+      ```
+    installation: |
+      ```bash
+      go get github.com/testcontainers/testcontainers-go/modules/mailpit
+      ```
   - id: python
     url: https://testcontainers-python.readthedocs.io/en/latest/modules/mailpit/README.html
     maintainer: core
@@ -21,14 +40,7 @@ docs:
       ```bash
       pip install testcontainers[mailpit]
       ```
-  - id: java
-    url: https://github.com/martinellich/testcontainers-mailpit
-    maintainer: community
-    example: |
-      ```java
-      var mailpit = new MailpitContainer();
-      mailpit.start();
-      ```
+
 description: |
   Mailpit is a small, fast, low memory, zero-dependency, multi-platform email testing tool & API for developers.
 ---

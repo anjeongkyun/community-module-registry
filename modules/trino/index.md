@@ -20,6 +20,17 @@ docs:
           <scope>test</scope>
       </dependency>
       ```
+  - id: go
+    url: https://golang.testcontainers.org/modules/trino/
+    maintainer: core
+    example: |
+      ```go
+      trinoContainer, err := trino.Run(context.Background(), "trinodb/trino:418")
+      ```
+    installation: |
+      ```bash
+      go get github.com/testcontainers/testcontainers-go/modules/trino
+      ```
   - id: python
     url: https://testcontainers-python.readthedocs.io/en/latest/modules/trino/README.html
     maintainer: core

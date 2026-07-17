@@ -21,6 +21,18 @@ docs:
           <scope>test</scope>
       </dependency>
       ```
+  - id: go
+    url: https://golang.testcontainers.org/modules/s3mock/
+    maintainer: core
+    example: |
+      ```go
+      s3mockContainer, err := s3mock.Run(context.Background(), "adobe/s3mock:3.9")
+      ```
+    installation: |
+      ```bash
+      go get github.com/testcontainers/testcontainers-go/modules/s3mock
+      ```
+
 description: |
     S3Mock is a popular open-source library that allows mock testing against many S3 APIs.
 
