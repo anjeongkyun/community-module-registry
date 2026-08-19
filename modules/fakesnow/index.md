@@ -21,5 +21,5 @@ docs:
       </dependency>
       ```
 description: |
-  fakesnow runs a local fake of Snowflake, backed by DuckDB, that the official snowflake-jdbc driver connects to unmodified. It lets JVM projects test Snowflake-flavoured SQL — VARIANT, LATERAL FLATTEN, QUALIFY — without a Snowflake account.
+  fakesnow runs a local fake of Snowflake, backed by DuckDB, that the official snowflake-jdbc driver connects to unmodified. It lets JVM projects test Snowflake-flavoured SQL such as VARIANT, LATERAL FLATTEN and QUALIFY without a Snowflake account.
 ---
