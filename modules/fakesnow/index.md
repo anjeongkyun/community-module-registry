@@ -16,7 +16,7 @@ docs:
       <dependency>
           <groupId>io.github.anjeongkyun</groupId>
           <artifactId>testcontainers-fakesnow</artifactId>
-          <version>0.1.0</version>
+          <version>0.1.2</version>
           <scope>test</scope>
       </dependency>
       ```
